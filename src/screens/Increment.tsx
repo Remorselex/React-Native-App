@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
+import {Screens} from '../navigation/Screens/Screens';
 
 function Increment() {
   const [count, setCount] = useState(0);
@@ -8,7 +9,10 @@ function Increment() {
     <View style={styles.main}>
       <Text>You clicked {count} times</Text>
       <View style={styles.wrapper}>
-        <Button onPress={() => setCount(prev => prev + 1)} title="Increment!" />
+        <Button
+          onPress={() => setCount(prev => prev + 1)}
+          title={Screens.INCREMENT}
+        />
       </View>
     </View>
   );
@@ -20,6 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'blue',
   },
   wrapper: {
     display: 'flex',

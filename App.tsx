@@ -1,17 +1,9 @@
 import React from 'react';
 // import {StyleSheet} from 'react-native';
-import MyStack from './src/MyStack';
+import MyStack from './src/navigation/stack/MyStack';
 
 const App = () => {
   return <MyStack />;
 };
-
-// const styles = StyleSheet.create({
-//   main: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-// });
 
 export default App;
