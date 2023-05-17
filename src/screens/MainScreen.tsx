@@ -12,7 +12,7 @@ function MainScreen() {
 
   return (
     <View style={styles.main}>
-      <Text style={styles.header}>Navigation</Text>
+      <Text style={styles.headText}>Navigation</Text>
       <TouchableOpacity
         onPress={() => {
           navigation.navigate(Screens.INCREMENT, {
@@ -38,10 +38,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#282a36',
   },
-  header: {
-    color: 'green',
+  headText: {
+    fontWeight: '900',
   },
 });
 
